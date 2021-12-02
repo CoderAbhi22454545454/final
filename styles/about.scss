@@ -1,0 +1,232 @@
+* {
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("../Assets/font/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad";
+  src: url("../Assets/font/Myriad-Pro.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-header {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  .About-wrapper {
+    position: relative;
+    p {
+      width: 60%;
+      margin: 2rem 0rem;
+      font-size: 1.12rem;
+      font-weight: 400;
+      span {
+        font-weight: 600;
+      }
+    }
+    h1 {
+      font-family: "Myriad";
+      font-size: 4rem;
+    }
+  }
+  .About-wrapper::after {
+    content: "";
+    position: absolute;
+    background: url("../Assets/About.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: -1%;
+    height: 100vh;
+    left: 45%;
+    z-index: -2;
+    transform: scale(0.75);
+  }
+}
+
+footer {
+  background: #fafafa;
+  margin-top: 13.5rem;
+
+  h5 {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1285px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    .About-wrapper {
+      position: relative;
+      p {
+        width: 60%;
+        margin: 2rem 0rem;
+        font-size: 1.12rem;
+        font-weight: 400;
+        span {
+          font-weight: 600;
+        }
+      }
+      h1 {
+        font-family: "Myriad";
+        font-size: 4rem;
+      }
+    }
+    .About-wrapper::after {
+      content: "";
+      position: absolute;
+      background: url("../Assets/About.png") no-repeat;
+      height: 100%;
+      width: 100%;
+      top: 17%;
+      height: 100vh;
+      left: 40%;
+      z-index: -2;
+      transform: scale(0.6);
+    }
+  }
+}
+@media (max-width: 1080px) {
+  body {
+    overflow-x: hidden;
+  }
+  .main-header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7rem;
+  }
+
+  .main-header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8rem;
+    .About-wrapper {
+      position: relative;
+      p {
+        width: 60%;
+        margin: 2rem 0rem;
+        font-size: 1.12rem;
+        font-weight: 400;
+        span {
+          font-weight: 600;
+        }
+      }
+      h1 {
+        font-family: "Myriad";
+        font-size: 4rem;
+      }
+    }
+    .About-wrapper::after {
+      content: "";
+      position: absolute;
+      background: url("../Assets/About.png") no-repeat;
+      height: 100%;
+      width: 100%;
+      top: 17%;
+      height: 125vh;
+      left: 45%;
+      z-index: -2;
+      transform: scale(0.6);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+ .logo {
+    text-align: start;
+    margin-right: -2rem;
+    margin-top: 2rem;
+    position:absolute;
+    top: 0;
+    left: -8%;
+  }
+  
+  .logo img {
+    max-width: 70%;
+  }
+  .main-header {
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    height: 40vh;
+    margin-top: 10rem;
+    .About-wrapper {
+      position: relative;
+      p {
+        width: 100%;
+        margin: 2rem 0rem;
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+      }
+    }
+    .About-wrapper::after {
+      content: "";
+      position: absolute;
+      background: none;
+      height: 100vh;
+      width: 100vw;
+      top: 65%;
+     left: 24%;
+      z-index: -2;
+      transform: scale(40%);
+    }
+  }
+  footer {
+    z-index: -1;
+    background: #fafafa;
+    margin-top: 26.5rem;
+    // padding-top: 4rem;
+  }
+}
+
+@media (max-width: 362px) { 
+  .main-header {
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    .About-wrapper {
+      position: relative;
+      p {
+        width: 100%;
+        margin: 2rem 0rem;
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+      }
+    }
+    .About-wrapper::after {
+      content: "";
+      position: absolute;
+      background: url("../Assets/About.png") no-repeat;
+      height: 100%;
+      width: 100%;
+      top: 65%;
+      height: 120vh;
+      left: 27%;
+      z-index: -2;
+      transform: scale(55%);
+    }
+  }
+}

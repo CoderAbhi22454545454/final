@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: "Myriad";
+  src: url("../Assets/font/Myriad-Pro.otf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+header {
+  position: relative;
+}
+
+header .top-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 4.3rem;
+}
+
+header .logo {
+  display: hidden;
+}
+
+header .about-hero-img img {
+  max-width: 100%;
+}
+
+#social-media {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#social-media img {
+  display: none;
+}
+
+#social-media .social-media-wrp::after {
+  content: "";
+  position: absolute;
+  background: url("../Assets/HomeProfile.png") no-repeat;
+  height: 100%;
+  width: 100%;
+  top: -13%;
+  left: 45%;
+  z-index: -2;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+#social-media .social-media-wrp .heading h1 {
+  line-break: loose;
+  font-size: 3rem;
+  font-family: "Myriad";
+  line-height: 2.9rem;
+  position: relative;
+}
+
+#social-media .social-media-wrp .heading .heading::before {
+  content: "";
+  position: absolute;
+  background: url("../Assets/mainLogo.png") no-repeat;
+  height: 100%;
+  width: 100%;
+  top: -15%;
+  left: 45%;
+  z-index: -2;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+#social-media .social-media-wrp .social-para p {
+  font-size: 1.12rem;
+  width: 50%;
+  font-weight: 400;
+  margin: 3.5rem 0rem 1rem 0rem;
+}
+
+#social-media .social-media-wrp .s-para {
+  margin: 1.2rem 0rem;
+}
+
+#social-media .social-media-wrp .s-para P {
+  font-size: 1.12rem;
+  margin: 1rem 0rem;
+  width: 50%;
+  line-height: 1.1rem;
+}
+
+#social-media .social-media-wrp .s-para h5 {
+  margin: 0.25rem 0rem;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+#social-media .social-media-wrp .s-para button {
+  margin-top: 2rem;
+}
+
+#social-media .social-media-wrp .s-para h4 {
+  font-size: 1.12rem;
+}
+
+#social-media .social-media-wrp .diff p {
+  font-size: 1.12rem;
+  width: 100%;
+}
+
+#graphics-services {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#graphics-services .graphics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+}
+
+#graphics-services .graphics .left-graphics img {
+  max-width: 35vw;
+}
+
+#graphics-services .graphics .right-graphics {
+  margin-left: 8rem;
+}
+
+#graphics-services .graphics .right-graphics h1 {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-family: "Myriad";
+  font-weight: 900;
+  font-size: 3.6rem;
+  line-height: 2.8rem;
+}
+
+#graphics-services .graphics .right-graphics p {
+  font-size: 18px;
+  margin: 1rem 0rem;
+  width: 85%;
+  line-height: 1.1rem;
+}
+
+#graphics-services .graphics .right-graphics h4 {
+  margin: 0.25rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#graphics-services .graphics .right-graphics button {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #fafafa;
+}
+
+footer .footer-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-wrap .left-footer {
+  margin-top: 0rem;
+}
+
+footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: 0rem auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+@media (max-width: 1285px) {
+  footer {
+    height: 35vh;
+    width: 100%;
+  }
+  header {
+    position: relative;
+  }
+  header .top-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 3rem;
+  }
+  #social-media img {
+    position: absolute;
+    top: -17%;
+    margin-right: 12rem;
+  }
+  #social-media .social-media-wrp::after {
+    top: -11%;
+    left: 40%;
+    z-index: -2;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #social-media .social-media-wrp .heading h1 {
+    line-break: loose;
+    font-size: 3rem;
+    font-family: "Myriad";
+    line-height: 2.9rem;
+    position: relative;
+  }
+  #social-media .social-media-wrp .heading .heading::before {
+    top: 25%;
+    left: 05%;
+    z-index: -2;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #social-media .social-media-wrp .social-para p {
+    font-size: 1.12rem;
+    width: 50%;
+    font-weight: 400;
+    margin: 2.5rem 0rem 1rem 0rem;
+  }
+  #social-media .social-media-wrp .s-para {
+    margin: 1.2rem 0rem;
+  }
+  #social-media .social-media-wrp .s-para P {
+    font-size: 1.125rem;
+  }
+  #social-media .social-media-wrp .s-para h5 {
+    margin: 1.2rem 0rem;
+    margin: 0.25rem 0rem;
+    font-size: 0.95rem;
+  }
+  #social-media .social-media-wrp .s-para h4 {
+    font-size: 0.95rem;
+  }
+  #social-media .social-media-wrp .diff p {
+    font-size: 0.92rem;
+    width: 100%;
+    font-weight: 400;
+  }
+  #graphics-services {
+    width: 90%;
+  }
+  #graphics-services .graphics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+  }
+  #graphics-services .graphics .left-graphics img {
+    max-width: 37vw;
+  }
+  #graphics-services .graphics .right-graphics {
+    margin-left: 6rem;
+  }
+  #graphics-services .graphics .right-graphics h1 {
+    margin-top: 2rem;
+    font-family: "Myriad";
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+  #graphics-services .graphics .right-graphics p {
+    font-size: 1.12rem;
+  }
+  #graphics-services .graphics .right-graphics h4 {
+    font-size: 1.12rem;
+  }
+  #graphics-services .graphics .right-graphics button {
+    margin: 2rem 0rem;
+  }
+}
+
+@media (max-width: 820px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    position: relative;
+  }
+  header .about-hero-img img {
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+  #social-media {
+    overflow: hidden;
+    width: 99%;
+    margin: 0 auto;
+    position: relative;
+  }
+  #social-media img {
+    position: absolute;
+    top: -10%;
+    z-index: 100;
+  }
+  #social-media .social-media-wrp::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5%;
+    left: 55%;
+    z-index: -2;
+    -webkit-transform: scale(0.955);
+            transform: scale(0.955);
+  }
+  #social-media .social-media-wrp {
+    padding: 2rem;
+  }
+  #social-media .social-media-wrp .heading h1 {
+    line-break: loose;
+    font-family: "Myriad";
+  }
+  #social-media .social-media-wrp .social-para p {
+    width: 80%;
+    margin: 2rem 0rem 1rem 0rem;
+  }
+  #social-media .social-media-wrp .s-para {
+    margin: 1.2rem 0rem;
+  }
+  #social-media .social-media-wrp .s-para h5 {
+    margin: 0.25rem 0rem;
+    width: 67%;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  #social-media .social-media-wrp .s-para button {
+    margin-top: 2rem;
+  }
+  #social-media .social-media-wrp .s-para h4 {
+    font-size: 1.12rem;
+  }
+  #social-media .social-media-wrp .diff p {
+    font-size: 1.12rem;
+    width: 100%;
+  }
+  #graphics-services {
+    width: 95%;
+  }
+  #graphics-services .graphics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #graphics-services .graphics .left-graphics {
+    content: "";
+    position: absolute;
+    background: url("../Assets/HomeServies.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: -1%;
+    right: 70%;
+    z-index: -2;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #graphics-services .graphics .left-graphics img {
+    max-width: 40vw;
+    display: none;
+  }
+  #graphics-services button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  header {
+    position: relative;
+  }
+  header .about-hero-img img {
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(2.5);
+  }
+  #social-media {
+    width: 100%;
+    margin: 0rem auto;
+    position: relative;
+    margin-top: 7rem;
+  }
+  #social-media img {
+    position: absolute;
+    top: -15%;
+  }
+  #social-media .social-media-wrp::after {
+    content: "";
+    position: absolute;
+    background: url("../Assets/HomeProfile.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: 25%;
+    left: 45%;
+    z-index: -2;
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
+  }
+  #social-media .social-media-wrp .heading h1 {
+    line-break: loose;
+    font-size: 2.2rem;
+    font-family: "Myriad";
+    line-height: 1.81rem;
+    position: relative;
+  }
+  #social-media .social-media-wrp .heading .heading::before {
+    content: "";
+    position: absolute;
+    background: url("../Assets/mainLogo.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: -15%;
+    left: 45%;
+    z-index: -2;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  #social-media .social-media-wrp .social-para p {
+    width: 100%;
+    font-size: 0.95rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  #social-media .social-media-wrp .s-para {
+    margin: 1rem 0rem;
+  }
+  #social-media .social-media-wrp .s-para P {
+    font-size: 16px;
+    margin: 1rem 0rem;
+    width: 100%;
+    line-height: 1.1rem;
+  }
+  #social-media .social-media-wrp .s-para h5 {
+    width: 100%;
+    margin: 0.25rem 0rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  #social-media .social-media-wrp .s-para button {
+    margin-top: 2rem;
+  }
+  #social-media .social-media-wrp .s-para h4 {
+    font-size: 1rem;
+  }
+  #social-media .social-media-wrp .break p {
+    width: 77%;
+  }
+  #social-media .social-media-wrp .diff p {
+    font-size: 16px;
+    width: 82%;
+  }
+  #graphics-services {
+    width: 95%;
+  }
+  #graphics-services .graphics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #graphics-services .graphics .left-graphics {
+    content: "";
+    position: absolute;
+    background: url("../Assets/HomeServies.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    top: -1%;
+    right: -35%;
+    z-index: -2;
+    -webkit-transform: scale(0.55);
+            transform: scale(0.55);
+  }
+  #graphics-services .graphics .right-graphics {
+    margin-left: 1rem;
+  }
+  #graphics-services .graphics .right-graphics h1 {
+    line-break: loose;
+    font-size: 2.2rem;
+    font-family: "Myriad";
+    line-height: 1.7rem;
+    position: relative;
+  }
+  #graphics-services .graphics .right-graphics .break-para p {
+    width: 70%;
+  }
+  #graphics-services .graphics .right-graphics p {
+    font-size: 16px;
+    margin: 1rem 0rem;
+    width: 100%;
+    line-height: 1.1rem;
+  }
+  #graphics-services .graphics .right-graphics h4 {
+    margin: 0.25rem 0rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  #graphics-services .graphics .right-graphics button {
+    margin-top: 2rem;
+  }
+  footer {
+    background-color: #fafafa;
+    height: 100%;
+  }
+  footer .footer-wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-wrap .left-footer {
+    margin-top: 2rem;
+  }
+  footer .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0rem auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 0rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+/*# sourceMappingURL=services.css.map */

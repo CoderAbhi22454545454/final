@@ -1,0 +1,11 @@
+
+Color Scheme- 
+
+Theme color- #1695b5 
+DarkBlue- #173e66
+
+Light- #fcfcfc
+
+Dark - #000000
+
+Grey - #969696
